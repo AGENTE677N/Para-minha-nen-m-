@@ -1,1 +1,0 @@
-# Para-minha-nen-m-
