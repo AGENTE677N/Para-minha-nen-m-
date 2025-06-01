@@ -18,13 +18,12 @@
       min-height: 100vh;
       background: linear-gradient(135deg, #fce4ec 0%, #d1c4e9 100%);
       font-family: 'Montserrat', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       color: #4a148c;
       text-align: center;
       padding: 20px;
-      overflow: hidden;
+      overflow-y: auto; /* permite rolagem vertical */
+      display: block; /* removido o flex para permitir rolagem */
+      position: relative; /* para o posicionamento absoluto dos corações */
     }
 
     .card {
@@ -36,6 +35,7 @@
       animation: fadeIn 1.5s ease forwards, pulse 3s infinite;
       position: relative;
       z-index: 2;
+      margin: 40px auto; /* centraliza horizontalmente e dá margem vertical */
     }
 
     @keyframes fadeIn {
@@ -167,12 +167,14 @@
     <h1>Para a minha Neném, o amor da minha vida <span class="heart">💖</span></h1>
     <img src="minha_nenem.jpg" alt="Foto da Clara" />
     <p>
-      Você é a coisa mais linda que Deus colocou na minha vida. <br />
-      Seu sorriso ilumina meus dias, sua voz acalma meu coração, <br />
-      e seu amor me dá forças todos os dias para continuar sonhando.<br /><br />
-      Te amo mais do que palavras podem explicar. Você é tudo pra mim! 💕
+      Para o Amor da Minha Vida 💖</h1>
+    <p>Você é aquilo que um dia sonhei para mim, o sorriso que me alegra só de pensar e o seu amor que tanto aquece meu coração.</p>
+    <p>Com você, cada segundo é incrível, cada riso é uma melodia e cada abraço um alívio para meu coração.</p>
+    <p>Minha namorada, minha melhor amiga e razão de meu viver. Você é meu tudo, minha paz, minha alegria.</p>
+    <p>Eu te amo além das palavras, além do tempo, além de tudo que eu poderia imaginar. Você é o meu presente e meu eterno futuro.</p>
+    <p class="footer">Para sempre seu, com todo o amor do mundo. 💜🌸
     </p>
-    <footer>Com todo meu amor, para sempre seu 💘</footer>
+    <footer> Feito pelo seu amorzinho. 💘</footer>
   </div>
 </body>
 </html>
