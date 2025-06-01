@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para minha Neném e meu Amor 💖</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #fce4ec 0%, #d1c4e9 100%);
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #4a148c;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(74, 20, 140, 0.3);
+      max-width: 450px;
+      padding: 40px 30px;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      margin-bottom: 0.2em;
+      color: #6a1b9a;
+      text-shadow: 2px 2px 8px #ce93d8;
+    }
+
+    img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      border: 6px solid #ba68c8;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(186, 104, 200, 0.6);
+      margin: 20px 0 30px 0;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(186, 104, 200, 0.9);
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1.3em;
+      color: #4a148cdd;
+    }
+
+    .heart {
+      font-size: 2rem;
+      color: #ce93d8;
+      animation: heartbeat 1.5s infinite;
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+        color: #ce93d8;
+      }
+      50% {
+        transform: scale(1.2);
+        color: #ab47bc;
+      }
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 15px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(186, 104, 200, 0.4);
+      outline: none;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #9c27b0cc;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Para a minha Neném o amor da minha vida <span class="heart">💖</span></h1>
+    <img src="minha_nenem.jpg" alt="Foto da Clara" />
+    <p>Você é a aquilo que um dia sonhei para mim, o sorriso que me alegra so de pensar e o seu amor que tanto aquece meu coração.</p>
+    <p>Com você, cada segundo e incrivel,cada riso é uma melodia e cada abraço um alivio para meu coração.</p>
+    <p>Minha namorada,minha melhor amiga e razão de meu viver. Você é meu tudo, minha paz, minha alegria.</p>
+    <p>Eu Te amo além das palavras, além do tempo, além de tudo que eu poderia imaginar. Você é o meu presente e meu eterno futuro.</p>
+    <p>Para sempre seu, com todo o amor do mundo. 💜🌸</p>
+
+    <audio controls autoplay loop>
+      <source src="https://www.dropbox.com/scl/fi/m5j80e0u8t2j6hs7z9p7v/Domingas-Jorge-Ben.mp3?rlkey=7ehvcv2gqyb1dsesfqkxf67hm&dl=1" type="audio/mpeg" />
+      Seu navegador não suporta áudio.
+    </audio>
+
+    <footer>Feito pelo o seu amorzinho.</footer>
+  </div>
+</body>
+</html>
