@@ -9,6 +9,8 @@
 
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
@@ -22,6 +24,7 @@
       color: #4a148c;
       text-align: center;
       padding: 20px;
+      overflow: hidden;
     }
 
     .card {
@@ -30,7 +33,9 @@
       box-shadow: 0 10px 25px rgba(74, 20, 140, 0.3);
       max-width: 450px;
       padding: 40px 30px;
-      animation: fadeIn 1.5s ease forwards;
+      animation: fadeIn 1.5s ease forwards, pulse 3s infinite;
+      position: relative;
+      z-index: 2;
     }
 
     @keyframes fadeIn {
@@ -44,17 +49,26 @@
       }
     }
 
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.02);
+      }
+    }
+
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 3.5rem;
-      margin-bottom: 0.2em;
+      font-size: 3.2rem;
+      margin-bottom: 0.3em;
       color: #6a1b9a;
       text-shadow: 2px 2px 8px #ce93d8;
     }
 
     img {
-      width: 280px;
-      height: 280px;
+      width: 260px;
+      height: 260px;
       border-radius: 50%;
       border: 6px solid #ba68c8;
       object-fit: cover;
@@ -94,38 +108,71 @@
       }
     }
 
-    audio {
-      width: 100%;
-      margin-top: 15px;
-      border-radius: 15px;
-      box-shadow: 0 6px 15px rgba(186, 104, 200, 0.4);
-      outline: none;
-    }
-
     footer {
       margin-top: 30px;
       font-size: 0.9rem;
       color: #9c27b0cc;
       font-style: italic;
     }
+
+    /* Corações animados no fundo */
+    .hearts {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .hearts span {
+      position: absolute;
+      display: block;
+      color: #f48fb1;
+      font-size: 1.5rem;
+      animation: float 10s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.2);
+        opacity: 0;
+      }
+    }
   </style>
 </head>
 <body>
+  <div class="hearts">
+    <!-- Vários corações animados -->
+    <span style="left: 10%;">💗</span>
+    <span style="left: 30%;">💖</span>
+    <span style="left: 50%;">💕</span>
+    <span style="left: 70%;">💓</span>
+    <span style="left: 90%;">💞</span>
+    <span style="left: 20%;">💘</span>
+    <span style="left: 80%;">❤️</span>
+  </div>
+
   <div class="card">
-    <h1>Para a minha Neném o amor da minha vida <span class="heart">💖</span></h1>
+    <h1>Para a minha Neném, o amor da minha vida <span class="heart">💖</span></h1>
     <img src="minha_nenem.jpg" alt="Foto da Clara" />
-    <p>Você é a aquilo que um dia sonhei para mim, o sorriso que me alegra so de pensar e o seu amor que tanto aquece meu coração.</p>
-    <p>Com você, cada segundo e incrivel,cada riso é uma melodia e cada abraço um alivio para meu coração.</p>
-    <p>Minha namorada,minha melhor amiga e razão de meu viver. Você é meu tudo, minha paz, minha alegria.</p>
-    <p>Eu Te amo além das palavras, além do tempo, além de tudo que eu poderia imaginar. Você é o meu presente e meu eterno futuro.</p>
-    <p>Para sempre seu, com todo o amor do mundo. 💜🌸</p>
-
-    <audio controls autoplay loop>
-      <source src="https://www.dropbox.com/scl/fi/m5j80e0u8t2j6hs7z9p7v/Domingas-Jorge-Ben.mp3?rlkey=7ehvcv2gqyb1dsesfqkxf67hm&dl=1" type="audio/mpeg" />
-      Seu navegador não suporta áudio.
-    </audio>
-
-    <footer>Feito pelo o seu amorzinho.</footer>
+    <p>
+      Você é a coisa mais linda que Deus colocou na minha vida. <br />
+      Seu sorriso ilumina meus dias, sua voz acalma meu coração, <br />
+      e seu amor me dá forças todos os dias para continuar sonhando.<br /><br />
+      Te amo mais do que palavras podem explicar. Você é tudo pra mim! 💕
+    </p>
+    <footer>Com todo meu amor, para sempre seu 💘</footer>
   </div>
 </body>
 </html>
